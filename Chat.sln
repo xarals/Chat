@@ -3,24 +3,52 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Chat", "Chat\Chat.vcxproj", "{44930D89-300F-4D83-87E3-4034E9541E7E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client", "Client\Client.vcxproj", "{E007467A-53E2-41DA-9671-CAA38BE5DF11}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server", "Server\Server.vcxproj", "{BCEA33E1-C647-4B68-A47E-F277BB3F3C6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Client(Debug)|x64 = Client(Debug)|x64
+		Client(Debug)|x86 = Client(Debug)|x86
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
+		Server(Debug)|x64 = Server(Debug)|x64
+		Server(Debug)|x86 = Server(Debug)|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{44930D89-300F-4D83-87E3-4034E9541E7E}.Debug|x64.ActiveCfg = Debug|x64
-		{44930D89-300F-4D83-87E3-4034E9541E7E}.Debug|x64.Build.0 = Debug|x64
-		{44930D89-300F-4D83-87E3-4034E9541E7E}.Debug|x86.ActiveCfg = Debug|Win32
-		{44930D89-300F-4D83-87E3-4034E9541E7E}.Debug|x86.Build.0 = Debug|Win32
-		{44930D89-300F-4D83-87E3-4034E9541E7E}.Release|x64.ActiveCfg = Release|x64
-		{44930D89-300F-4D83-87E3-4034E9541E7E}.Release|x64.Build.0 = Release|x64
-		{44930D89-300F-4D83-87E3-4034E9541E7E}.Release|x86.ActiveCfg = Release|Win32
-		{44930D89-300F-4D83-87E3-4034E9541E7E}.Release|x86.Build.0 = Release|Win32
+		{E007467A-53E2-41DA-9671-CAA38BE5DF11}.Client(Debug)|x64.ActiveCfg = Client(Debug)|x64
+		{E007467A-53E2-41DA-9671-CAA38BE5DF11}.Client(Debug)|x64.Build.0 = Client(Debug)|x64
+		{E007467A-53E2-41DA-9671-CAA38BE5DF11}.Client(Debug)|x86.ActiveCfg = Client(Debug)|Win32
+		{E007467A-53E2-41DA-9671-CAA38BE5DF11}.Client(Debug)|x86.Build.0 = Client(Debug)|Win32
+		{E007467A-53E2-41DA-9671-CAA38BE5DF11}.Debug|x64.ActiveCfg = Debug|x64
+		{E007467A-53E2-41DA-9671-CAA38BE5DF11}.Debug|x64.Build.0 = Debug|x64
+		{E007467A-53E2-41DA-9671-CAA38BE5DF11}.Debug|x86.ActiveCfg = Debug|Win32
+		{E007467A-53E2-41DA-9671-CAA38BE5DF11}.Debug|x86.Build.0 = Debug|Win32
+		{E007467A-53E2-41DA-9671-CAA38BE5DF11}.Release|x64.ActiveCfg = Release|x64
+		{E007467A-53E2-41DA-9671-CAA38BE5DF11}.Release|x64.Build.0 = Release|x64
+		{E007467A-53E2-41DA-9671-CAA38BE5DF11}.Release|x86.ActiveCfg = Release|Win32
+		{E007467A-53E2-41DA-9671-CAA38BE5DF11}.Release|x86.Build.0 = Release|Win32
+		{E007467A-53E2-41DA-9671-CAA38BE5DF11}.Server(Debug)|x64.ActiveCfg = Server(Debug)|x64
+		{E007467A-53E2-41DA-9671-CAA38BE5DF11}.Server(Debug)|x64.Build.0 = Server(Debug)|x64
+		{E007467A-53E2-41DA-9671-CAA38BE5DF11}.Server(Debug)|x86.ActiveCfg = Server(Debug)|Win32
+		{BCEA33E1-C647-4B68-A47E-F277BB3F3C6B}.Client(Debug)|x64.ActiveCfg = Client(Debug)|x64
+		{BCEA33E1-C647-4B68-A47E-F277BB3F3C6B}.Client(Debug)|x64.Build.0 = Client(Debug)|x64
+		{BCEA33E1-C647-4B68-A47E-F277BB3F3C6B}.Client(Debug)|x86.ActiveCfg = Client(Debug)|Win32
+		{BCEA33E1-C647-4B68-A47E-F277BB3F3C6B}.Debug|x64.ActiveCfg = Debug|x64
+		{BCEA33E1-C647-4B68-A47E-F277BB3F3C6B}.Debug|x64.Build.0 = Debug|x64
+		{BCEA33E1-C647-4B68-A47E-F277BB3F3C6B}.Debug|x86.ActiveCfg = Debug|Win32
+		{BCEA33E1-C647-4B68-A47E-F277BB3F3C6B}.Debug|x86.Build.0 = Debug|Win32
+		{BCEA33E1-C647-4B68-A47E-F277BB3F3C6B}.Release|x64.ActiveCfg = Release|x64
+		{BCEA33E1-C647-4B68-A47E-F277BB3F3C6B}.Release|x64.Build.0 = Release|x64
+		{BCEA33E1-C647-4B68-A47E-F277BB3F3C6B}.Release|x86.ActiveCfg = Release|Win32
+		{BCEA33E1-C647-4B68-A47E-F277BB3F3C6B}.Release|x86.Build.0 = Release|Win32
+		{BCEA33E1-C647-4B68-A47E-F277BB3F3C6B}.Server(Debug)|x64.ActiveCfg = Server(Debug)|x64
+		{BCEA33E1-C647-4B68-A47E-F277BB3F3C6B}.Server(Debug)|x64.Build.0 = Server(Debug)|x64
+		{BCEA33E1-C647-4B68-A47E-F277BB3F3C6B}.Server(Debug)|x86.ActiveCfg = Server(Debug)|Win32
+		{BCEA33E1-C647-4B68-A47E-F277BB3F3C6B}.Server(Debug)|x86.Build.0 = Server(Debug)|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
