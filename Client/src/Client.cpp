@@ -40,17 +40,11 @@ void Client::connectToServer() {
 
     std::cout << "Connected to server" << std::endl;
 
+    std::thread(&Client::startReceiving, this).detach();
+
     int choice;
 
-    std::cout << "1 - login\n2 - registration" << std::endl;
-    std::cin >> choice;
-
-    if (choice == 1)
-        handleLogin();
-    else if (choice == 2)
-        handleRegistration();
-
-    std::thread(&Client::startReceiving, this).detach();
+    std::cout << "/login - login\n/registration - registration" << std::endl;
 }
 
 void Client::sendMessage(const std::string& message) {

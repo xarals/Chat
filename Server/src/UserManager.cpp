@@ -37,6 +37,29 @@ User UserManager::getUser(SOCKET socket) {
 	}
 }
 
+User UserManager::getUser(const std::string& username) {
+	for (User user : users) {
+		if (user.getUsername() == username)
+			return user;
+	}
+}
+
+bool UserManager::haveSocket(SOCKET socket) {
+	for (User user : users) {
+		if (user.getSocket() == socket)
+			return true;
+	}
+	return false;
+}
+
+bool UserManager::isConnect(const std::string& username) {
+	for (User user : users) {
+		if (user.getUsername() == username)
+			return true;
+	}
+	return false;
+}
+
 bool UserManager::authenticate(const std::string& username, const std::string& input_password) {
 	int user_id = UsersDataBase::getDataBase()->getUserId(username);
 	if (user_id == -1)

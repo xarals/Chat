@@ -8,7 +8,12 @@ int main() {
 	std::string message;
 	while (true) {
 		std::getline(std::cin, message);
-		client.sendMessage(message);
+		if (message == "/login")
+			client.handleLogin();
+		else if (message == "/registration")
+			client.handleRegistration();
+		else 
+			client.sendMessage(message);
 	}
 	
 	return 0;

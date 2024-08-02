@@ -25,8 +25,13 @@ private:
 
     void handleClient(SOCKET client_socket);
     void broadcastMessage(const std::string& message, SOCKET sender_socket);
-    void handleLogin(std::string message, SOCKET client_socket);
-    void handleRegistration(std::string message, SOCKET client_socket);
+    void handleLogin(const std::string& message, SOCKET client_socket);
+    void handleRegistration(const std::string& message, SOCKET client_socket);
+    void handleBan(const std::string& message, SOCKET sender_socket);
+    void handleUnban(const std::string& message, SOCKET sender_socket);
+    void handleKick(const std::string& message, SOCKET sender_socket);
+    void handleDelete(const std::string& message, SOCKET sender_socket);
+    void handleAddRole(const std::string& message, SOCKET sender_socket);
 };
 
 #endif

@@ -11,6 +11,9 @@ public:
     void addUser(int id, SOCKET socket);
     void removeUser(SOCKET socket);
     User getUser(SOCKET socket);
+    User getUser(const std::string& username);
+    bool haveSocket(SOCKET socket);
+    bool isConnect(const std::string& username);
     bool authenticate(const std::string& username, const std::string& password);
     void regustration(const std::string& username, const std::string& password);
     bool checkUsername(const std::string& username);

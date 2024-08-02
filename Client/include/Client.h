@@ -16,6 +16,8 @@ public:
     void sendMessage(const std::string& message);
     void startReceiving();
     std::string getUsername();
+    void handleLogin();
+    void handleRegistration();
 
 private:
     SOCKET client_socket;
@@ -24,8 +26,6 @@ private:
     std::string username;
 
     void receiveMessages();
-    void handleLogin();
-    void handleRegistration();
 };
 
 #endif
