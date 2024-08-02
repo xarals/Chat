@@ -7,7 +7,7 @@ This is a C++ application for information exchange between users, featuring a se
 - **User Authentication**: Users can register and log in to the server.
 - **Role System**: Different user roles (user, moderator, admin, creator) with distinct permissions.
 - **Role Management**: Higher roles can manage lower roles with commands like `/ban`, `/unban`, `/kick`, `/delete`, and `/addrole`.
-- **MySQL Integration**: The server connects to a MySQL database to store registered users' information.
+- **MySQL Integration**: The server connects to a MySQL database to store registered users information.
 - **Real-time Communication**: The server handles real-time communication between connected clients.
 
 ## Usage
